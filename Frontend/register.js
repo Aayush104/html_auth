@@ -19,7 +19,7 @@ btn.addEventListener('click', async (e) => {
         document.getElementById('username').value = '';
         document.getElementById('email').value = '';
         document.getElementById('password').value = '';
-        
+       
     } else if (response.status === 400) {
         toastr.error('Email already exists');
     } else {

@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Linking jQuery and Toastr CSS and JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Toastr -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 <title>Registration Form</title>
 <style>
   body {
@@ -60,7 +62,7 @@
 
 <div class="container">
   <h2>Registration Form</h2>
-  <form method="POST">
+  <form id="registrationForm" method="POST">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
     
@@ -72,11 +74,13 @@
     
     <input type="submit" value="Register" id="btn">
   </form>
+
+  <!-- Adding the login button -->
+  <a href="../pages/login.html"><button>Login</button></a> 
 </div>
 
-<!-- Include your JavaScript file with the correct case -->
-<script src="../client.js"></script>
+<!-- Include your JavaScript file -->
+<script src="../register.js"></script>
 
 </body>
-
 </html>
